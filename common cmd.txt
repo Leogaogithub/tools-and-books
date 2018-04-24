@@ -1,1 +1,58 @@
+---------------------------draw graph----------------------------------------------------------------------------
+#http://graphviz.org/
+#http://archived.neilpahl.com/logs/diagram-tools/graphviz/2-creating-a-graph-from-a-dot-file-via-the-command-line/
 
+sudo apt-get install graphviz
+
+dot -Tpng graph.txt -o graph.png
+
+digraph G {
+    one -> two;
+    one -> three;
+    one -> four;
+    four -> five -> six;
+    five -> one;
+    six -> two;
+}
+   dot - filter for drawing directed graphs
+       neato - filter for drawing undirected graphs
+       twopi - filter for radial layouts of graphs
+       circo - filter for circular layout of graphs
+       fdp - filter for drawing undirected graphs
+       sfdp - filter for drawing large undirected graphs
+       
+-------------------------------------------------------------------------------------------------------
+echo '[INFO] Total time: 2 minutes 8 seconds' | cut -d: -f2
+ 2 minutes 8 seconds
+ 
+------------------------------------------------------------------------------------------------------- 
+.open
+watch
+curl
+
+-----------Execute a command once per line of piped input-------------------------------
+cat input.txt | grep "link" > link.txt
+
+cat link.txt | parallel --no-notice python ./parser.py
+ 
+parser.py
+ 
+import re;
+import sys; 
+line = sys.argv[1];
+links= re.match('.*link\(((.*),(.*).*)\).*', line);
+print links.group(2) + "->" + links.group(3) ;
+
+input.txt
+
+xxx
+.link(aaa,bbb)
+.link(ccc,ddd)
+.link(bbb,eee)
+    one -> two;
+    one -> three;
+
+cat input.txt | grep "link" | parallel --no-notice python ./parser.py > partgraph.txt | echo  "digraph G {" > graph.txt; cat partgraph.txt >> graph.txt; echo "}" >> graph.txt;  dot -Tpng graph.txt -o graph.png
+
+
+ 
