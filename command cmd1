@@ -1,0 +1,10 @@
+So I checked all the packages using
+sudo dpkg -l | grep virtualbox
+
+Then removed everything by
+sudo dpkg --purge <package name>
+
+https://github.com/hashicorp/vagrant/issues/8687
+
+sudo apt-get autoremove virtualbox-dkms
+sudo apt-get install build-essential linux-headers-`uname -r` dkms virtualbox-dkms
