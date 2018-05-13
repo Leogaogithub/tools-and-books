@@ -4,3 +4,10 @@ https://www.elastic.co/guide/en/elasticsearch/reference/5.5/docker.html
 
 http://www.cnblogs.com/Wolfmanlq/p/5984376.html
 https://www.elastic.co/guide/cn/elasticsearch/guide/current/running-elasticsearch.html
+
+https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html#deb-repo
+
+sudo -i service elasticsearch start
+sudo -i service elasticsearch stop
+
+curl 'http://localhost:9200/?pretty'
