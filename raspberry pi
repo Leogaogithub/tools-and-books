@@ -7,7 +7,7 @@ cat /proc/partitions
 2.
 #copy image to sd
 
-sudo dd if=/home/username/Downloads/2012-10-28-wheezy-raspbian.img of=/dev/sdc status=progress bs=4M
+sudo dd if=/home/username/Downloads/2018-04-18-raspbian-stretch.img of=/dev/sdc status=progress bs=4M
 
 
 https://developer.ubuntu.com/core/get-started/raspberry-pi-2-3
