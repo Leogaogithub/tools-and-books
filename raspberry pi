@@ -1,3 +1,5 @@
+make sure filesystem is fat32
+
 1. check sd card name 
 ls  -la /dev/sd*
 
