@@ -1,7 +1,7 @@
 make sure filesystem is fat32
 
 https://www.techwalla.com/articles/how-to-format-an-sd-card-in-ubuntu
-*** format and copy image using disks in linux
+*** format  using disks in linux, then dd, 
 
 1. check sd card name 
 ls  -la /dev/sd*
