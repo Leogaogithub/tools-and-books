@@ -14,3 +14,7 @@ shadowsocks
 https://www.reddit.com/r/China/comments/8hp0kr/shadowsocks_server_on_raspberry_pi/
 
 https://medium.com/@moreless/%E5%9C%A8-raspberry-pi-%E4%B8%8A%E5%AE%89%E8%A3%85shadowsocks-f008b15991b0
+
+ ping -s 1472 104.193.88.123
+
+dig www.baidu.com @8.8.8.8
