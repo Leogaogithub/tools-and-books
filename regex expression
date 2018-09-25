@@ -4,3 +4,5 @@ http://www.cbs.dtu.dk/courses/27610/regular-expressions-cheat-sheet-v2.pdf
 
 
 echo "22.1" |egrep -o "[1-9]{2}\\.[1-9]{1}"
+
+ cat txt.txt |egrep -Eo "(Medium|Hard|Easy)" >out.txt
